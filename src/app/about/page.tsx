@@ -10,14 +10,14 @@ export default function AboutPage() {
             At HardCore BUILDERS, We&rsquo;re not just constructing spaces — We&rsquo;re building legacies.
           </p>
           <button className="mt-8 px-6 py-3 bg-yellow-600 text-white text-lg rounded-xl shadow hover:bg-yellow-700">
-            <Link href="contact">Let's Talk</Link>
+            <Link href="contact">Let&rsquo;s Talk</Link>
           </button>
         </section>
   
         <section className="py-20 px-6 md:px-16 bg-white">
           <div className="max-w-4xl mx-auto space-y-6 text-lg">
             <p>
-              With a solid foundation built on integrity and precision, HardCore BUILDERS delivers high-end interior renovations, durable exterior works, and beautifully designed garden spaces. Whether you're transforming your home or upgrading a commercial facility, we provide tailored solutions that elevate both form and function.
+              With a solid foundation built on integrity and precision, HardCore BUILDERS delivers high-end interior renovations, durable exterior works, and beautifully designed garden spaces. Whether you&rsquo;re transforming your home or upgrading a commercial facility, we provide tailored solutions that elevate both form and function.
             </p>
             <p>
               Our collaborative approach means we listen first. We want to understand your goals, challenges, and vision before laying the first brick. Every project is guided by clear timelines, detailed reporting, and open communication from concept to completion.
@@ -26,7 +26,7 @@ export default function AboutPage() {
               From cozy residential updates to large-scale commercial builds, our strength lies in versatility, craftsmanship, and consistency. We bring creativity, organization, and experience to every job.
             </p>
             <p className="italic text-yellow-700 font-semibold">
-              We're not just contractors. We're your building partners.
+              We&rsquo;re not just contractors. We&rsquo;re your building partners.
             </p>
           </div>
         </section>
