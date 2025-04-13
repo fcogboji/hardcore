@@ -39,9 +39,9 @@ export default function Home() {
             <br />
             Home · Expertise · Office Interior Design
             <br />
-            Workplace interior design that's crafted around your business
+            Workplace interior design that&rsquo;s crafted around your business
             <br />
-            Discover how HardCore Builders' office design service can transform
+            Discover how HardCore Builders office design service can transform
             your workspace into an invigorating environment that enhances your
             culture and inspires your people. Contact us today to discuss your
             project.
