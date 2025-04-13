@@ -1,103 +1,115 @@
 import Image from "next/image";
 
+const services = [
+  {
+    image: "/cafe.png",
+    title: "Interior Renovation",
+    description:
+      "High-quality refurbishments to transform your living or working space with modern, functional designs.",
+  },
+  {
+    image: "/office.png",
+    title: "Exterior Renovation",
+    description:
+      "Private and commercial exterior upgrades that enhance both durability and visual appeal.",
+  },
+  {
+    image: "/gate.jpg",
+    title: "Garden Gate",
+    description:
+      "Custom-designed garden structures and landscaping to bring your outdoor vision to life.",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-white text-gray-800">
+      <section
+        className="mt-20 h-screen w-full bg-cover"
+        style={{ backgroundImage: "url('/bg-image.png')" }}
+      >
+        <div className="bg-opacity-60 p-8 rounded-2xl shadow-2xl text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            HardCore BUILDERS
+          </h1>
+          <p className="text-lg md:text-2xl max-w-xl mx-auto font-bold text-white">
+            Office Interior Design
+            <br />
+            Transform your office with interior design from HardCore Builders
+            <br />
+            Home · Expertise · Office Interior Design
+            <br />
+            Workplace interior design that's crafted around your business
+            <br />
+            Discover how HardCore Builders' office design service can transform
+            your workspace into an invigorating environment that enhances your
+            culture and inspires your people. Contact us today to discuss your
+            project.
+            <br />
+            Specialists in Interior Refurbishments, Exterior Renovations, and
+            Garden Building
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 px-6 md:px-16 bg-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Our Services
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              image={service.image}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="bg-gray-800 py-20 px-6 md:px-16 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Why Choose Us?
+        </h2>
+        <ul className="max-w-3xl mx-auto space-y-6 text-lg list-disc list-inside">
+          <li>Experienced team with over 10 years in the industry</li>
+          <li>Transparent pricing and reliable timelines</li>
+          <li>High-quality craftsmanship and materials</li>
+          <li>Dedicated to client satisfaction from start to finish</li>
+        </ul>
+      </section>
+
+      {/* Footer */}
+     
+    </main>
+  );
+}
+
+// Updated ServiceCard to use images
+function ServiceCard({
+  image,
+  title,
+  description,
+}: {
+  image: string;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition duration-300 text-center">
+      <div className="relative w-full h-40 mb-4">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover rounded-md"
+        />
+      </div>
+      <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </div>
   );
 }
