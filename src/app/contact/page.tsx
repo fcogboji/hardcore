@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-center mt-15">Contact Us</h1>
         <p className="text-lg mb-10 text-center">
-          We'd love to hear from you! Reach out to us using the details below.
+        We&rsquo;d love to hear from you! Reach out to us using the details below.
         </p>
 
         <div className="bg-gray-100 p-6 rounded-xl shadow-md space-y-6">

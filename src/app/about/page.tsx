@@ -7,7 +7,7 @@ export default function AboutPage() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us </h1>
          
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            At HardCore BUILDERS, we’re not just constructing spaces — we’re building legacies.
+            At HardCore BUILDERS, We&rsquo;re not just constructing spaces — We&rsquo;re building legacies.
           </p>
           <button className="mt-8 px-6 py-3 bg-yellow-600 text-white text-lg rounded-xl shadow hover:bg-yellow-700">
             <Link href="contact">Let's Talk</Link>
@@ -64,7 +64,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-2xl font-semibold">CHAS Accredited</h3>
               <p>
-                Our commitment to health and safety is backed by CHAS – a leading UK provider of compliance and risk management services.
+                Our commitment to health and safety is backed by CHAS  a leading UK provider of compliance and risk management services.
               </p>
             </div>
             <div>

@@ -8,7 +8,7 @@ export default function HealthAndSafetyPage() {
     <main className="p-8 max-w-5xl mx-auto">
       <nav className="mb-6 flex gap-4 text-blue-600 font-medium">
         <Link href="/">Home</Link>
-        <span>/</span>
+        {/*<span>/</span>*/}
         <span>Health & Safety</span>
       </nav>
 
