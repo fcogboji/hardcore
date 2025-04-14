@@ -25,7 +25,7 @@ export default function HealthAndSafetyPage() {
         </h2>
         <p className="text-gray-600 max-sm:text-black leading-relaxed text-sm sm:text-base">
           At HardCore Builder, protecting people and promoting a positive culture of health & safety is not just a responsibility; 
-          it's a commitment to the safety, health and wellbeing of every individual. 
+          it&apos;s a commitment to the safety, health and wellbeing of every individual. 
           Going beyond compliance, we proactively identify and mitigate risk, 
           providing a secure environment where everyone can feel protected and thrive.
         </p>
