@@ -5,10 +5,7 @@ import Link from 'next/link';
 export default function HealthAndSafetyPage() {
   return (
     <main className="px-4 py-8 sm:px-6 lg:px-8 max-w-5xl mx-auto max-sm:text-white">
-      <nav className="mb-6 flex flex-wrap gap-2 text-blue-600 max-sm:text-white font-medium text-sm sm:text-base">
-        <Link href="/">Home</Link>
-        <span>Health & Safety</span>
-      </nav>
+     
 
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800 max-sm:text-black">
         Putting health & safety at the forefront of all we do
