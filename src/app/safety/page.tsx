@@ -10,20 +10,20 @@ export default function HealthAndSafetyPage() {
         <span>Health & Safety</span>
       </nav>
 
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800 max-sm:text-white">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800 max-sm:text-black">
         Putting health & safety at the forefront of all we do
       </h1>
 
       <section
-        className="mt-10 sm:mt-16 h-64 sm:h-[70vh] w-full bg-cover bg-center rounded-lg"
+        className="mt-10 sm:mt-16 h-64 sm:h-[70vh] w-full bg-cover bg-center rounded-lg bg-grey-800 text-black"
         style={{ backgroundImage: "url('/hse.png')" }}
       ></section>
 
       <section className="my-8">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 max-sm:text-white mb-2">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 max-sm:text-black mb-2">
           Health, safety and wellbeing at HardCore Builder
         </h2>
-        <p className="text-gray-600 max-sm:text-white leading-relaxed text-sm sm:text-base">
+        <p className="text-gray-600 max-sm:text-black leading-relaxed text-sm sm:text-base">
           At HardCore Builder, protecting people and promoting a positive culture of health & safety is not just a responsibility; 
           it's a commitment to the safety, health and wellbeing of every individual. 
           Going beyond compliance, we proactively identify and mitigate risk, 
@@ -31,7 +31,7 @@ export default function HealthAndSafetyPage() {
         </p>
       </section>
 
-      <section className="mb-8">
+      <section className="mb-8 bg-yellow-600 rounded-lg">
         <h3 className="text-lg sm:text-xl font-semibold text-gray-700 max-sm:text-white mb-2">
           Key Contacts
         </h3>
@@ -48,7 +48,7 @@ export default function HealthAndSafetyPage() {
         <h3 className="text-lg sm:text-xl font-semibold text-gray-700 max-sm:text-white mb-2">
           How we protect people at HardCore Builder
         </h3>
-        <ul className="list-disc pl-4 sm:pl-6 text-gray-600 max-sm:text-white space-y-1 text-sm sm:text-base">
+        <ul className="list-disc pl-4 sm:pl-6 text-gray-600 max-sm:text-black space-y-1 text-sm sm:text-base">
           <li>Committed leadership</li>
           <li>Integrating safety from the start</li>
           <li>Robust health & safety management system</li>
@@ -60,10 +60,10 @@ export default function HealthAndSafetyPage() {
       </section>
 
       <section>
-        <h3 className="text-lg sm:text-xl font-semibold text-gray-700 max-sm:text-white mb-2">
+        <h3 className="text-lg sm:text-xl font-semibold text-gray-700 max-sm:text-black mb-2">
           Our health & safety accreditations
         </h3>
-        <ul className="list-disc pl-4 sm:pl-6 text-gray-600 max-sm:text-white space-y-1 text-sm sm:text-base">
+        <ul className="list-disc pl-4 sm:pl-6 text-gray-600 max-sm:text-black space-y-1 text-sm sm:text-base">
           <li>ISO 45001 Occupational Health & Safety Management System</li>
           <li>RoSPA Member and Order of Distinction</li>
           <li>SafeContractor™ Member</li>
