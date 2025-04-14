@@ -18,17 +18,10 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-yellow-500' : 'bg-white'
-      } shadow-md`}
-    >
+    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo / Name */}
-        <Link
-          href="/"
-          className="text-2xl font-bold text-blue-600 font-bold"
-        >
+        <Link href="/" className="text-2xl font-bold text-blue-600 font-bold">
           HardCore Builders
         </Link>
 
@@ -40,15 +33,24 @@ const Navbar = () => {
           <Link href="/safety" className="hover:text-blue-500">Health &amp; Safety</Link>
         </div>
 
-        {/* Hamburger Icon */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {/* Hamburger Icon with scroll-based gold background and icon color */}
+        <button
+          className={`md:hidden p-2 rounded transition-colors duration-300 ${
+            isScrolled ? 'bg-yellow-500' : 'bg-transparent'
+          }`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? (
+            <X size={24} color={isScrolled ? 'white' : 'black'} />
+          ) : (
+            <Menu size={24} color={isScrolled ? 'white' : 'black'} />
+          )}
         </button>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2 bg-gray-800 text-white shadow-md transition-all duration-300 rounded-2">
+        <div className="md:hidden px-4 pb-4 space-y-2 bg-gray-800 text-white shadow-md transition-all duration-300">
           <Link href="/contact" className="block hover:text-blue-400" onClick={() => setIsOpen(false)}>Contact</Link>
           <Link href="/about" className="block hover:text-blue-400" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/projects" className="block hover:text-blue-400" onClick={() => setIsOpen(false)}>Projects</Link>
