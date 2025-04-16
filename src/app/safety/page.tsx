@@ -6,7 +6,7 @@ import Link from 'next/link'; // Importing Link component from Next.js for clien
 export default function HealthAndSafetyPage() {
   return (
     // Main container with padding and responsive max width
-    <main className="px-4 py-8 sm:px-6 lg:px-8 max-w-5xl mx-auto max-sm:text-white">
+    <main className="px-4 py-8 sm:px-6 lg:px-8 max-w-5xl mx-auto max-sm:text-black sm: bg-grey-800">
       
       {/* Breadcrumb navigation */}
       <nav className="mb-6 flex flex-wrap gap-2 text-blue-600 max-sm:text-white font-medium text-sm sm:text-base">
