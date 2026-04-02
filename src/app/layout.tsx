@@ -3,6 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar/page";
 import Footer from "./footer/page";
+import Script from "next/script";
+
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +36,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Script src="https://24-7concept-pew4inhis-friday-s-projects.vercel.app/widget.js" async data-bot-id="cmnhyjfkk0001o6kxos3r1qaj" data-brand="hardcore builder"></Script>
       </body>
     </html>
   );
